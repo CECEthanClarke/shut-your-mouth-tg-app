@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  shut-your-mouth-tg-app:
+    image: connectingeverycorner/shut-your-mouth-tg-app:latest
+    container_name: shut-your-mouth-tg-app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    restart: always
+    stdin_open: true
+    tty: true
+    environment:
+      - APP_ID=value
+      - APP_HASH=value
+      - MODE=FULL_DELETE_MODE
+      - DELAY_DELETION_SECONDS=0
+    volumes:
+      - "./config:/app/config"

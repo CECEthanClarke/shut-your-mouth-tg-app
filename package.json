@@ -1,0 +1,16 @@
+{
+  "name": "shut-your-mouth-tg-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "CECEthanClarke",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "prebuilt-tdlib": "^0.1008041.0",
+    "tdl": "^8.0.2"
+  }
+}
